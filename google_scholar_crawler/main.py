@@ -6,6 +6,8 @@ import os
 
 author: dict = scholarly.search_author_id(os.environ['GOOGLE_SCHOLAR_ID'])
 scholarly.fill(author, sections=['basics', 'indices', 'counts', 'publications'])
+author['scholar_id'] = os.environ['GOOGLE_SCHOLAR_ID']
+author['profile_url'] = f"https://scholar.google.com/citations?user={os.environ['GOOGLE_SCHOLAR_ID']}"
 name = author['name']
 author['updated'] = str(datetime.now())
 author['publications'] = {v['author_pub_id']:v for v in author['publications']}

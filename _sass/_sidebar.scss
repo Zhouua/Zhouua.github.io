@@ -141,6 +141,20 @@
 
   @include breakpoint($large) {
     margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+
+.author__description {
+  margin: 0;
+  font-family: $sans-serif;
+  font-size: $type-size-6;
+  line-height: 1.5;
+  color: $text-color;
+  white-space: normal;
+
+  @include breakpoint($large) {
+    margin-top: 10px;
     margin-bottom: 20px;
   }
 }
