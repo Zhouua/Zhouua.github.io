@@ -10,21 +10,21 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-# About
+# 👋 About
 
 <div class="hero-intro">
   <p>I am <strong>Zian Zhou</strong>, a B.Eng. student in <strong>Software Engineering</strong> at <strong>Zhejiang University</strong>. My interests lie in <strong>machine learning</strong>, <strong>multimodal foundation models</strong>, <strong>multi-agent reinforcement learning</strong>, <strong>quantitative ML</strong>, and <strong>trustworthy AI systems</strong>.</p>
 </div>
 
 <div class="quick-links">
-  <a class="btn author_google_scholar_link" href="https://scholar.google.com/scholar?q=%22Zian+Zhou%22+%22Zhejiang+University%22">Google Scholar</a>
+  <a class="btn author_google_scholar_link" href="{{ site.author.googlescholar }}">Google Scholar</a>
   <a class="btn btn--inverse" href="mailto:zhouzian@zju.edu.cn">Email</a>
   <a class="btn btn--inverse" href="https://github.com/Zhouua">GitHub</a>
 </div>
 
 <span class='anchor' id='latest-news'></span>
 
-# News
+# 📰 News
 
 - **Mar 2026**: Joined **CICC** as a Quantitative Strategy Intern in Machine Learning Research, focusing on multi-agent RL for option hedging and ML-driven CTA pipelines.
 - **Jan 2026**: Started an independent winter research project on multimodal fusion and explainability in medical AI in preparation for MICCAI.
@@ -34,61 +34,52 @@ redirect_from:
 
 <span class='anchor' id='selected-publications'></span>
 
-# Selected Publications
+# 📚 Selected Publications
 
-<div id="selected-publications-list">
-  <p class="pub-list-empty">Selected publications will be loaded automatically from Google Scholar after the `google-scholar-stats` Action updates your public stats branch.</p>
+<p class="selected-publications-intro">
+  Full publication list on <a class="author_google_scholar_link" href="{{ site.author.googlescholar }}">Google Scholar</a>.
+</p>
+<p class="selected-publications-note">
+  * denotes distributed contribution.
+</p>
+
+<div class="selected-publications-list">
+  {% for publication in site.data.selected_publications %}
+  <div class="paper-box">
+    <div class="paper-box-image">
+      <a class="paper-box-image-link" href="{{ publication.image | relative_url }}" target="_blank" rel="noopener" aria-label="Open full-size teaser for {{ publication.title }}">
+        <img src="{{ publication.image | relative_url }}" alt="{{ publication.title }} teaser" loading="lazy">
+      </a>
+      <p class="paper-box-image-note">Click image to enlarge</p>
+    </div>
+    <div class="paper-box-text">
+      <h3 class="publication-title">
+        <a href="{{ publication.paper_url }}" target="_blank" rel="noopener">{{ publication.title }}</a>
+      </h3>
+      <p class="publication-authors">{{ publication.authors }}</p>
+      <p class="publication-highlight">{{ publication.highlight }}</p>
+      {% capture publication_meta %}
+        {% if publication.venue and publication.venue != "" %}{{ publication.venue }}{% endif %}
+        {% if publication.venue and publication.venue != "" and publication.year and publication.year != "" %}, {% endif %}
+        {% if publication.year and publication.year != "" %}{{ publication.year }}{% endif %}
+      {% endcapture %}
+      {% assign publication_meta = publication_meta | strip %}
+      {% if publication_meta != "" %}
+      <p class="publication-meta">{{ publication_meta }}</p>
+      {% endif %}
+      <p class="publication-links">
+        <a class="publication-link" href="{{ publication.image | relative_url }}" target="_blank" rel="noopener">Preview</a>
+        {% for link in publication.links %}
+        <a class="publication-link" href="{{ link.url }}" target="_blank" rel="noopener">{{ link.label }}</a>
+        {% endfor %}
+      </p>
+    </div>
+  </div>
+  {% endfor %}
 </div>
 
-<span class='anchor' id='featured-work'></span>
 
-# Selected Work
-
-<div class="highlight-grid">
-  <div class="highlight-card">
-    <h3>Multi-Agent RL for Option Delta Hedging</h3>
-    <p class="highlight-meta">China International Capital Corporation | 2026</p>
-    <ul>
-      <li>Developed a multi-agent reinforcement learning framework for option delta hedging.</li>
-      <li>Designed an OP Agent to infer directional positioning from implied volatility surfaces and Greeks.</li>
-      <li>Built an HR Agent to route hedging decisions across pre-trained hedgers with different risk preferences.</li>
-    </ul>
-  </div>
-
-  <div class="highlight-card">
-    <h3>SpineMed-450k and SpineBench</h3>
-    <p class="highlight-meta">Hangzhou Yuanzhoufang | 2025</p>
-    <ul>
-      <li>Constructed <strong>SpineMed-450k</strong>, a clinically grounded multimodal dataset with 400K+ samples and 1,000 real-world cases.</li>
-      <li>Co-developed <strong>SpineBench</strong>, a benchmark spanning 14 spinal sub-diseases with an XML-based LLM-as-a-Judge evaluation protocol.</li>
-      <li>Fine-tuned <strong>Qwen-2.5-VL</strong> and achieved results surpassing multiple open-source multimodal models on SpineBench.</li>
-    </ul>
-  </div>
-
-  <div class="highlight-card">
-    <h3>scholarwiki.com</h3>
-    <p class="highlight-meta">Pi3Lab | 2025</p>
-    <ul>
-      <li>Independently built <strong>scholarwiki.com</strong>, an alternative to Paper with Code after the service shutdown.</li>
-      <li>Implemented high-concurrency crawlers for daily arXiv paper and code ingestion.</li>
-      <li>Scaled the platform to <strong>570K+ indexed papers</strong> and <strong>40K+ visits</strong>, with automated summarization and publishing workflows.</li>
-    </ul>
-  </div>
-
-  <div class="highlight-card">
-    <h3>CSGO Virtual Asset Market Trend Prediction System</h3>
-    <p class="highlight-meta">National University of Singapore | 2025</p>
-    <ul>
-      <li>Led the final project during the NUS Summer Research Program and built a full-stack forecasting system.</li>
-      <li>Collected transaction data with Selenium-based dynamic crawlers and trained deep learning time-series models.</li>
-      <li>Achieved an <strong>R2 score of 0.8963</strong> on the test set and deployed a web platform for trend visualization and forecasting.</li>
-    </ul>
-  </div>
-</div>
-
-<span class='anchor' id='experience-section'></span>
-
-# Experience
+# 💼 Experience
 
 ## China International Capital Corporation (CICC)
 
@@ -132,7 +123,7 @@ redirect_from:
 
 <span class='anchor' id='education-section'></span>
 
-# Education
+# 🎓 Education
 
 ## Zhejiang University
 
@@ -150,7 +141,7 @@ redirect_from:
 
 <span class='anchor' id='awards'></span>
 
-# Honors and Awards
+# 🏆 Honors and Awards
 
 - National Scholarship.
 - Zhejiang University First-Class Scholarship.
@@ -159,12 +150,10 @@ redirect_from:
 - Gold Award, Zhejiang Provincial International College Students' Innovation Competition.
 - First Prize, National College Students Mathematics Competition (Zhejiang).
 - First Prize, Zhejiang Higher Mathematics Competition.
-- Third Prize, Zhejiang University Mathematical Modeling Competition.
-- Third Prize, Zhejiang Physics Competition.
 
 <span class='anchor' id='skills-section'></span>
 
-# Skills
+# 🛠️ Skills
 
 - **Programming**: Python, C++, PyTorch, Selenium, Git.
 - **AI/ML**: Multimodal LLMs/VLMs, reinforcement learning, quantitative ML, OCR pipelines, benchmark design, model fine-tuning, and backtesting systems.

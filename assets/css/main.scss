@@ -43,42 +43,81 @@
 .paper-box {
     display: flex;
     justify-content: left;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: row;
     flex-wrap: wrap;
     border-bottom: 1px #efefef solid;
-    padding: 2em 0 2em 0;
+    gap: 1.5rem;
+    padding: 1.75rem 0;
     
 
     .paper-box-image{
         justify-content: center;
         display: flex;
+        flex-direction: column;
+        align-items: center;
         width: 100%;
-        order: 2;
-        img {
-            max-width: 400px;
-            box-shadow: 3px 3px 6px #888;
-            object-fit: cover;
+        margin-top: 0.2rem;
+        order: 1;
+
+        a {
+            display: block;
+            width: 100%;
+            max-width: 36rem;
         }
+
+        img {
+            display: block;
+            width: 100%;
+            height: auto;
+            border-radius: 16px;
+            border: 1px solid #e6e8eb;
+            box-shadow: 0 14px 28px rgba(15, 23, 42, 0.12);
+            background: #fff;
+        }
+    }
+
+    .paper-box-image-link {
+        cursor: zoom-in;
+        transition: transform 160ms ease;
+
+        &:hover {
+            transform: translateY(-2px);
+        }
+    }
+
+    .paper-box-image-note {
+        margin: 0.65rem 0 0;
+        color: #667085;
+        font-family: $sans-serif;
+        font-size: $type-size-7;
     }
     
     .paper-box-text{
         max-width: 100%;
-        order: 1;
+        order: 2;
+        flex: 1 1 0;
+        min-width: 0;
     }
     
     @include breakpoint($medium) {
+        flex-wrap: nowrap;
+        gap: 1.75rem;
+
         .paper-box-image{
-            justify-content: left;
-            min-width: 200px;
-            max-width: 40%;
+            justify-content: flex-start;
+            align-items: flex-start;
+            margin-top: 0.9rem;
+            flex: 0 1 420px;
+            max-width: 420px;
+            min-width: 300px;
             order: 1;
         }
         
         .paper-box-text{
             justify-content: left;
-            padding-left: 2em;
-            max-width: 60%;
+            padding-left: 0;
+            max-width: none;
             order: 2;
         }
 
@@ -193,9 +232,15 @@ h1:before, .anchor:before {
 
     img {
         display: block;
+        width: 156px;
+        height: 156px;
         max-width: 156px;
         min-width: 0;
         margin: 0 auto;
+        border-radius: 50%;
+        object-fit: cover;
+        object-position: center;
+        border: 1px solid #e6e8eb;
     }
 }
 
@@ -248,43 +293,82 @@ h1:before, .anchor:before {
 
 .publication-title {
     margin: 0 0 0.35rem;
-    font-size: 1.05rem;
+    font-size: 1.35rem;
+    line-height: 1.35;
+
+    a {
+        color: #1447c4;
+        text-decoration: underline;
+        text-decoration-thickness: 1px;
+        text-underline-offset: 0.12em;
+    }
 }
 
 .publication-authors,
 .publication-meta,
-.publication-summary,
 .publication-links {
     margin: 0 0 0.45rem;
 }
 
-.publication-authors,
-.publication-summary {
-    font-size: 0.98rem;
+.publication-authors {
+    font-size: 1.08rem;
+    line-height: 1.6;
+
+    strong {
+        font-weight: 700;
+        color: #111827;
+    }
+}
+
+.publication-highlight {
+    margin: 0 0 0.55rem;
+    color: #bf2600;
+    font-style: italic;
+    font-weight: 600;
+    line-height: 1.6;
 }
 
 .publication-meta {
-    color: #667085;
-    font-family: $sans-serif;
-    font-size: $type-size-6;
+    color: #4b5563;
+    font-style: italic;
 }
 
 .publication-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+}
+
+.publication-link {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.3rem 0.7rem;
+    border: 1px solid #c7d2fe;
+    border-radius: 999px;
+    background: #eef2ff;
+    color: #1d4ed8;
     font-family: $sans-serif;
     font-size: $type-size-6;
-}
-
-.publication-links a,
-.publication-links span {
     text-decoration: none;
+
+    &:hover {
+        background: #dbeafe;
+        color: #1e40af;
+    }
 }
 
-.pub-sep {
-    color: #98a2b3;
-    margin: 0 0.35rem;
+.selected-publications-intro {
+    margin-bottom: 0.25rem;
+    font-size: 1.05rem;
 }
 
-.pub-list-empty {
+.selected-publications-note {
+    margin: 0 0 0.95rem;
     color: #667085;
-    font-style: italic;
+    font-family: $sans-serif;
+    font-size: $type-size-7;
+}
+
+.selected-publications-list {
+    margin-top: 1rem;
 }

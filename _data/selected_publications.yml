@@ -1,0 +1,21 @@
+- title: "SpineBench: A Clinically Salient, Level-Aware Benchmark Powered by the SpineMed-450k Corpus"
+  authors: "Ming Zhao*, Wenhui Dong*, Yang Zhang*, Xiang Zheng, Zhonghao Zhang, <strong>Zian Zhou</strong>, Yunzhi Guan, Liukun Xu, Wei Peng et al."
+  venue: "ICLR 26"
+  year: "2025"
+  highlight: "A clinically grounded multimodal benchmark and data ecosystem for vertebral-level reasoning in spinal diagnosis."
+  image: "images/publications/SpineBench.jpg"
+  paper_url: "https://arxiv.org/abs/2510.03160"
+  links:
+    - label: "Paper"
+      url: "https://arxiv.org/abs/2510.03160"
+
+- title: "Ivy-Fake: A Unified Explainable Framework and Benchmark for Image and Video AIGC Detection"
+  authors: "Changjiang Jiang*, Wenhui Dong*, Zhonghao Zhang, Fengchang Yu, Wei Peng, Xinbin Yuan, Yifei Bi, Ming Zhao, <strong>Zian Zhou</strong>, Chenyang Si, Caifeng Shan"
+  # venue: ""
+  year: "2025"
+  highlight: "A clinically grounded multimodal benchmark and data ecosystem for vertebral-level reasoning in spinal diagnosis."
+  image: "images/publications/IvyFake.jpg"
+  paper_url: "https://arxiv.org/pdf/2506.00979"
+  links:
+    - label: "Paper"
+      url: "https://arxiv.org/pdf/2506.00979"
