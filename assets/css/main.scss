@@ -148,6 +148,7 @@ h1:before, .anchor:before {
 }
 
 .hero-intro {
+    margin-bottom: 1.2rem;
     font-size: 1.05em;
     line-height: 1.8;
 }
@@ -232,14 +233,14 @@ h1:before, .anchor:before {
 
     img {
         display: block;
-        width: 156px;
-        height: 156px;
-        max-width: 156px;
+        width: 184px;
+        height: 184px;
+        max-width: 184px;
         min-width: 0;
         margin: 0 auto;
         border-radius: 50%;
         object-fit: cover;
-        object-position: center;
+        object-position: center 18%;
         border: 1px solid #e6e8eb;
     }
 }
@@ -287,8 +288,48 @@ h1:before, .anchor:before {
     }
 }
 
+.author__urls i,
+.author__urls_sm i {
+    color: #2563eb;
+}
+
+.author__urls .fa-map-marker,
+.author__urls_sm .fa-map-marker {
+    color: #dc2626;
+}
+
+.author__urls .fa-envelope,
+.author__urls_sm .fa-envelope {
+    color: #38bdf8;
+}
+
+.author__urls .fa-github,
+.author__urls_sm .fa-github {
+    color: #111827;
+}
+
+.author__urls .fa-graduation-cap,
+.author__urls_sm .fa-graduation-cap {
+    color: #2563eb;
+}
+
 .author__urls_sm {
     display: none;
+}
+
+.inline-link {
+    color: #1447c4;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.12em;
+
+    &:hover {
+        color: #1e40af;
+    }
+}
+
+.text-red {
+    color: #bf2600;
 }
 
 .publication-title {

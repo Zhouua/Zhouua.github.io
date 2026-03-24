@@ -9,11 +9,11 @@ main:
   - title: "Selected Publications"
     url: "/#selected-publications"
 
-  - title: "Selected Work"
-    url: "/#featured-work"
+  - title: "Intern"
+    url: "/#intern-section"
 
-  - title: "Experience"
-    url: "/#experience-section"
+  - title: "Research"
+    url: "/#research-section"
 
   - title: "Education"
     url: "/#education-section"
