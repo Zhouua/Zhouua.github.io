@@ -102,15 +102,6 @@ redirect_from:
 - Reviewed and implemented representative designs for <b>cross-modal interaction, feature aggregation, and uncertainty-aware interpretation</b>.
 - Studied <b>explainability methods for multimodal medical models</b>, including token-level attribution, region-level attribution, case-based analysis, and clinically meaningful rationale generation.
 
-## Pi3Lab
-
-<p class="entry-meta">Nanjing University | Algorithm Intern | Jun 2025 - Oct 2025</p>
-
-- Worked under <a class="inline-link" href="https://chenyangsi.top/" target="_blank" rel="noopener"><strong>Prof. Chenyang Si</strong></a> on multimodal benchmarks and reinforcement learning for visual reasoning.
-- Curated clinical data and generated instructions with OCR and LLM pipelines, contributing to <strong>SpineMed-450k with 450,000+ instances</strong>; adapted and evaluated Qwen2.5-VL for spinal diagnosis and reasoning in <a class="inline-link" href="#publication-spinebench" target="_self">SpineBench (accepted, ICLR 2026)</a>.
-- Co-developed SpineBench for diagnosis and report generation, with an XML-based LLM-as-a-Judge evaluation protocol for reproducibility and objectivity.
-- Researched explainable detection of AI-generated images and videos in <a class="inline-link" href="#publication-ivy-fake" target="_self">Ivy-Fake (accepted, ICMR 2026)</a>, combining a unified benchmark with GRPO-based reinforcement learning to produce detection decisions and interpretable reasoning.
-
 ## State Key Lab of CAD&amp;CG, Zhejiang University
 
 <p class="entry-meta">Undergraduate Research Assistant | Hangzhou, China | Mar 2025 - Mar 2026</p>
@@ -138,6 +129,15 @@ redirect_from:
 - Used <strong>n8n</strong> to automate paper summarization and daily summary posts on Rednote.
 - Delivered enterprise-facing <strong>AI features for Excel and PowerPoint</strong> for <strong>Adidas and China Telecom</strong>.
 - Explored agent memory through reproductions and literature study on <b>Agentic Context Engineering and training-free GRPO</b>.
+
+## Pi3Lab
+
+<p class="entry-meta">Nanjing University | Algorithm Intern | Jun 2025 - Oct 2025</p>
+
+- Worked under <a class="inline-link" href="https://chenyangsi.top/" target="_blank" rel="noopener"><strong>Prof. Chenyang Si</strong></a> on multimodal benchmarks and reinforcement learning for visual reasoning.
+- Curated clinical data and generated instructions with OCR and LLM pipelines, contributing to <strong>SpineMed-450k with 450,000+ instances</strong>; adapted and evaluated Qwen2.5-VL for spinal diagnosis and reasoning in <a class="inline-link" href="#publication-spinebench" target="_self">SpineBench (accepted, ICLR 2026)</a>.
+- Co-developed SpineBench for diagnosis and report generation, with an XML-based LLM-as-a-Judge evaluation protocol for reproducibility and objectivity.
+- Researched explainable detection of AI-generated images and videos in <a class="inline-link" href="#publication-ivy-fake" target="_self">Ivy-Fake (accepted, ICMR 2026)</a>, combining a unified benchmark with GRPO-based reinforcement learning to produce detection decisions and interpretable reasoning.
 
 <span class='anchor' id='education-section'></span>
 
