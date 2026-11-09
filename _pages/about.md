@@ -170,7 +170,7 @@ redirect_from:
 - National Scholarship.
 - Zhejiang University First-Class Scholarship.
 - New Oriental Scholarship.
-- Top 10 Students of Yunfeng College.
+- Top 10 Students of Yunfeng College, Zhejiang University.
 - Silver Award, China International College Students' Innovation Competition 2025 (national).
 - Gold Award, Zhejiang Provincial International College Students' Innovation Competition.
 - First Prize, Chinese Mathematics Competitions (CMC).
