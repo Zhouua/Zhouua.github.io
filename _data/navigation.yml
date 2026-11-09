@@ -9,11 +9,11 @@ main:
   - title: "Selected Publications"
     url: "/#selected-publications"
 
-  - title: "Intern"
-    url: "/#intern-section"
-
   - title: "Research"
     url: "/#research-section"
+
+  - title: "Internships"
+    url: "/#intern-section"
 
   - title: "Education"
     url: "/#education-section"
@@ -25,4 +25,4 @@ main:
     url: "/#skills-section"
 
   - title: "Google Scholar"
-    url: "https://scholar.google.com/citations?view_op=list_works&hl=zh-CN&hl=zh-CN&user=rwBa14UAAAAJ"
+    url: "https://scholar.google.com/citations?user=rwBa14UAAAAJ"
