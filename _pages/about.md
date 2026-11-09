@@ -184,4 +184,4 @@ redirect_from:
 
 - **Programming**: Python, C++, PyTorch, Selenium, Git.
 - **AI/ML**: Multimodal LLMs/VLMs, reinforcement learning, quantitative ML, OCR pipelines, benchmark design, model fine-tuning, and backtesting systems.
-- **Languages**: Chinese (native) and English (TOEFL: 5.5/6).
+- **Languages**: Chinese (native) and English (strong academic reading and technical communication; TOEFL: 5.5/6).
